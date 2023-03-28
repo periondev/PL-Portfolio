@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+html,
+body {
+  @apply p-0 m-0;
+}
+h1 {
+  @apply text-4xl sm:text-6xl;
+}
+h2 {
+  @apply text-2xl;
+}
+p {
+  @apply text-base;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

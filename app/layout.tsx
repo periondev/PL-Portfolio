@@ -1,7 +1,11 @@
+import './globals.css';
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
-  title: { default: 'Peri Lin', template: '%s | Peri Lin' },
+  title: { default: 'Peri Lin Portfolio', template: '%s | Peri Lin Portfolio' },
   description: 'Front-end developer',
+  icons: {
+    shortcut: '/favicon.ico',
+  },
 };
 export default function RootLayout({
   // Layouts must accept a children prop.
