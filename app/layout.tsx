@@ -1,4 +1,5 @@
 import './globals.css';
+import clsx from 'clsx';
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: { default: 'Peri Lin Portfolio', template: '%s | Peri Lin Portfolio' },
@@ -15,7 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html
+      lang='en'
+      className={clsx('text-black bg-rice-color dark:text-rice-color dark:bg-[#111010]')}
+    >
       <body>{children}</body>
     </html>
   );
