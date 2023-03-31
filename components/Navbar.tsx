@@ -6,17 +6,14 @@ import Image from 'next/image';
 import { LayoutGroup, motion } from 'framer-motion';
 
 const navItems = {
-  '/': {
-    name: 'Home',
-  },
-  '/#about': {
-    name: 'About',
-  },
   '/projects': {
     name: 'Projects',
   },
   '/contact': {
     name: 'Contact',
+  },
+  '/blog': {
+    name: 'Blog',
   },
   '/resume': {
     name: 'Resume',
@@ -34,13 +31,9 @@ function Logo() {
 //navbar
 export default function Navbar() {
   let pathname = usePathname() || '/';
-  if (pathname.includes('/blog/')) {
-    pathname = '/blog';
-  }
-
   return (
     <aside className='md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif'>
-      <div className='lg:sticky lg:top-30'>
+      <div className='lg:sticky lg:top-10'>
         <div className='top-5 ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start '>
           <Logo />
         </div>
@@ -64,7 +57,7 @@ export default function Navbar() {
                       }
                     )}
                   >
-                    <span className='relative py-[5px] px-[10px]'>
+                    <button className='relative py-[10px] px-[10px]'>
                       {name}
                       {path === pathname ? (
                         <motion.div
@@ -77,7 +70,7 @@ export default function Navbar() {
                           }}
                         />
                       ) : null}
-                    </span>
+                    </button>
                   </Link>
                 );
               })}

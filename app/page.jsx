@@ -5,25 +5,7 @@ export default function Home() {
   return (
     <div>
       <section>
-        {/* <nav className='sticky top-0 py-10 mb-12 flex justify-between items-center'>
-            <div className='px-4 py-2  align-middle'>
-              <a className='text-4xl font-Zcool'>P.L</a>
-            </div>
-            <div className='flex justify-between align-middle'>
-              <a className='text-xl font-Zcool px-4 py-2'>About</a>
-              <a className='text-xl font-Zcool px-4 py-2'>Projects</a>
-              <a className='text-xl font-Zcool px-4 py-2'>Blog</a>
-              <a className='text-xl font-Zcool px-4 py-2'>Contact</a>
-              <button className='cursor-pointer px-4 py-2'>
-                <BsFillMoonStarsFill />
-              </button>
-              <a className='bg-gray-color text-lg text-white px-4 py-2 rounded-full' href='#'>
-                <span>Resume</span>
-              </a>
-            </div>
-          </nav> */}
-        <Navbar />
-        <div className='p-10'>
+        <div className='p-2'>
           <h2 className='text-5xl py-2 text-gray-color font-medium'>{name}</h2>
           <h4 className='text-2xl py-2'>{about()}</h4>
         </div>
@@ -38,7 +20,9 @@ export default function Home() {
       </section>
       <section>
         <div>
-          <h3 className='text-3xl py-1'>技術 Skills</h3>
+          <h3 className='text-3xl py-1' id='skills'>
+            Skills
+          </h3>
           <p>React, Next.js, Node.js....</p>
         </div>
         {/* Cards */}
