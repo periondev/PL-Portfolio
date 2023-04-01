@@ -1,8 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className='flex justify-center'>
+    <footer className='flex justify-center pb-20'>
       <a href='https://github.com/PeriYumYum' target='_blank' rel='noopener noreferrer'>
-        Designed and Built by Peri👒 © 2023
+        <p>Designed and Built by Peri👒 © 2023</p>
       </a>
     </footer>
   );

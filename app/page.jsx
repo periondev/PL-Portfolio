@@ -3,12 +3,13 @@ import { Footer } from '../components/Footer';
 import { Resume } from '../components/Resume';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { name, intro, about, skills } from 'lib/info';
+
 export default function Home() {
   return (
     <div>
       <section>
-        <div className='px-10 mb-10'>
-          <h1 className='pb-2 text-gray-color font-medium'>{name}</h1>
+        <div className='px-10 mb-10 md:pt-20 lg:pt-28 lg:mx-auto'>
+          <h1 className='pb-2'>{name}</h1>
           <p className='text-xl py-2'>{intro()}</p>
         </div>
         <div className='relative mx-auto my-10 bg-gradient-to-b from-lemon-color rounded-full h-40 w-40'>

@@ -13,9 +13,9 @@ module.exports = {
       colors: {
         'rice-color': '#f6eee3',
         'lemon-color': '#efdb5e',
-        'gray-color': '#b0b0b0',
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
+  darkMode: 'class',
 };

@@ -1,6 +1,5 @@
 import { FiMail, FiGithub } from 'react-icons/fi';
 import type { Metadata } from 'next';
-
 export const metadata: Metadata = {
   title: 'contact',
   description: 'contact information',
@@ -14,7 +13,7 @@ export default function ContactPage() {
         <a href=' '>
           <FiMail />
         </a>
-        <a href='https://github.com/PeriYumYum'>
+        <a href='https://github.com/PeriYumYum' target='_blank' rel='noreferrer noopener'>
           <FiGithub />
         </a>
       </div>
