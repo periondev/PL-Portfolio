@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 export const metadata: Metadata = {
   title: { default: 'Peri Lin Portfolio', template: '%s | Peri Lin Portfolio' },
-  description: 'Front-end developer',
+  description: 'Front-end developer portfolio',
   icons: {
     shortcut: '/favicon.ico',
   },

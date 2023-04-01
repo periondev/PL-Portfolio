@@ -1,5 +1,6 @@
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
+import { Resume } from '../components/Resume';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { name, intro, about, skills } from 'lib/info';
 export default function Home() {
@@ -7,22 +8,23 @@ export default function Home() {
     <div>
       <section>
         <div className='px-10 mb-10'>
-          <h2 className='text-3xl py-2 text-gray-color font-medium'>{name}</h2>
-          <h4 className='text-xl py-2'>{intro()}</h4>
+          <h1 className='pb-2 text-gray-color font-medium'>{name}</h1>
+          <p className='text-xl py-2'>{intro()}</p>
         </div>
-        <div className='relative mx-auto bg-gradient-to-b from-lemon-color rounded-full h-80 w-80'>
+        <div className='relative mx-auto my-10 bg-gradient-to-b from-lemon-color rounded-full h-40 w-40'>
           {/* Avatar */}
         </div>
       </section>
+      <Resume />
       <section>
         <div className='shadow-lg p-10 rounded-xl my-10'>
-          <h3 className='text-2xl py-2'>About</h3>
+          <h2 className='text-2xl py-2'>About</h2>
           <p className='py-2'>{about()}</p>
         </div>
       </section>
       <section>
         <div className='shadow-lg p-10 rounded-xl my-10'>
-          <h3 className='text-2xl py-2'>Skills</h3>
+          <h2 className='text-2xl py-2'>Skills</h2>
           <p>{skills()}</p>
         </div>
         {/* Cards */}
