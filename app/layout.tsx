@@ -1,9 +1,9 @@
 import './globals.css';
-import clsx from 'clsx';
 import { Providers } from './providers';
 import type { Metadata } from 'next';
-import Navbar from '../components/Navbar';
+import { Navbar } from '../components/Navbar';
 import { DarkModeSwitch } from '../components/DarkModeSwitch';
+import { Footer } from '../components/Footer';
 export const metadata: Metadata = {
   title: { default: 'Peri Lin Portfolio', template: '%s | Peri Lin Portfolio' },
   description: 'Front-end developer portfolio',
@@ -20,17 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body>
+      <body className='bg-rice-color dark:bg-zinc-900'>
         <Providers>
           <DarkModeSwitch />
-          <div
-            className={clsx(
-              'antialiased flex flex-col md:flex-row  bg-rice-color dark:bg-zinc-900'
-            )}
-          >
+          <div className='antialiased flex flex-col md:flex-row  bg-rice-color dark:bg-zinc-900'>
             <Navbar />
             <main className='flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0'>
               {children}
+              <Footer />
             </main>
           </div>
         </Providers>

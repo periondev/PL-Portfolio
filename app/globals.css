@@ -26,3 +26,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  @apply max-w-[960px] px-5 lg:pr-40 xl:pr-60 md:pt-20 mb-10 lg:mx-auto;
+}
