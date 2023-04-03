@@ -18,11 +18,17 @@ const navItems = {
   },
 };
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const Logo = () => {
   return (
-    <a aria-label='Peri Lin' href='/'>
-      <Image src='/logo.svg' width={80} height={80} alt='logo' />
-    </a>
+    <Link aria-label='Peri Lin' href='/'>
+      <span className='flex my-2 px-3 py-2' onClick={() => scrollToTop()}>
+        <Image src='/logo.svg' alt='logo' width={60} height={60} />
+      </span>
+    </Link>
   );
 };
 
@@ -30,9 +36,9 @@ const Logo = () => {
 export const Navbar = () => {
   let pathname = usePathname() || '/';
   return (
-    <aside className='ml-12 md:ml-20 lg:ml-28  font-serif'>
-      <div className='lg:sticky lg:top-20'>
-        <div className='top-5 mb-2 md:px-3 md:mb-8 space-y-10 flex flex-col md:flex-row items-start '>
+    <aside>
+      <div className='ml-2 md:ml-12 lg:ml-28 lg:sticky lg:top-20 font-serif'>
+        <div className='top-5 mb-2 md:mx-0 md:mb-8 space-y-10'>
           <Logo />
         </div>
         <LayoutGroup>
@@ -55,7 +61,7 @@ export const Navbar = () => {
                       }
                     )}
                   >
-                    <button className='relative my-2 pr-3 px-3 py-2'>
+                    <button className='relative my-2 px-3 py-2'>
                       {name}
                       {path === pathname ? (
                         <motion.div
