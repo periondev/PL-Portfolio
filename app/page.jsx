@@ -6,7 +6,7 @@ import { name, intro, about, skills } from 'lib/info';
 export default function Home() {
   return (
     <div className='container'>
-      <div className='px-5 '>
+      <div className='content'>
         <h1 className='py-2'>{name}</h1>
         <p className='text-xl py-2'>{intro()}</p>
       </div>
@@ -14,13 +14,13 @@ export default function Home() {
         {/* Avatar */}
       </div>
       <Resume />
-      <div className='shadow-lg p-5 rounded-xl my-10'>
+      <div className='shadow-box'>
         <h2 className='text-2xl py-2'>About</h2>
         <p className='py-2'>{about()}</p>
       </div>
-      <div className='shadow-lg p-5 rounded-xl my-10'>
+      <div className='shadow-box'>
         <h2 className='text-2xl py-2'>Skills</h2>
-        <p>{skills()}</p>
+        <p className='py-2'>{skills()}</p>
       </div>
       {/* Cards */}
       <Contact />

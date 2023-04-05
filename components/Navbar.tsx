@@ -36,8 +36,8 @@ const Logo = () => {
 export const Navbar = () => {
   let pathname = usePathname() || '/';
   return (
-    <aside>
-      <div className='ml-2 md:ml-12 lg:ml-28 lg:sticky lg:top-20 font-serif'>
+    <aside className='fixed flex w-full justify-start  bg-rice-color dark:bg-zinc-900 md:bg-opacity-0'>
+      <div className='ml-2 md:ml-7 lg:ml-20 mt-5 md:mt-14 lg:mt-24 pr-5 font-serif'>
         <div className='top-5 mb-2 md:mx-0 md:mb-8 space-y-10'>
           <Logo />
         </div>
@@ -61,16 +61,16 @@ export const Navbar = () => {
                       }
                     )}
                   >
-                    <button className='relative my-2 px-3 py-2'>
+                    <button className='relative px-3 py-2'>
                       {name}
                       {path === pathname ? (
                         <motion.div
-                          className='absolute inset-0 bg-neutral-100 dark:bg-zinc-700 rounded-lg z-[-1]'
-                          layoutId='sidebar'
+                          className='absolute inset-0 px-2.5 py-1.5 bg-neutral-100 dark:bg-zinc-700 rounded-lg z-[-1]'
+                          layoutId='Navbar'
                           transition={{
                             type: 'spring',
-                            stiffness: 350,
-                            damping: 30,
+                            stiffness: 300,
+                            damping: 40,
                           }}
                         />
                       ) : null}

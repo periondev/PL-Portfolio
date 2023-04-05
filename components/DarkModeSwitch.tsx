@@ -18,7 +18,7 @@ export const DarkModeSwitch = () => {
   }
 
   return (
-    <div className='flex w-full justify-end items-end p-4 bg-rice-color dark:bg-zinc-900'>
+    <div className='fixed z-20 flex w-full justify-end items-end py-3 px-4'>
       <select value={theme} onChange={(e) => setTheme(e.target.value)}>
         <option value='dark'>Dark</option>
         <option value='light'>Light</option>

@@ -20,16 +20,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className='bg-rice-color dark:bg-zinc-900'>
+      <body className='flex flex-col bg-rice-color dark:bg-zinc-900'>
         <Providers>
           <DarkModeSwitch />
-          <div className='antialiased flex flex-col md:flex-row  bg-rice-color dark:bg-zinc-900'>
+          <div className='antialiased flex flex-col md:flex-row md:justify-center  bg-rice-color dark:bg-zinc-900'>
             <Navbar />
-            <main className='flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0'>
+            <main className='flex flex-col items-center min-w-0 mt-8 md:mt-0 px-2 md:px-0'>
               {children}
-              <Footer />
             </main>
           </div>
+          <Footer />
         </Providers>
       </body>
     </html>
