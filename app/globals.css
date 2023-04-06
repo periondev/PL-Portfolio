@@ -31,7 +31,7 @@ button {
   @apply text-lg;
 }
 .container {
-  @apply max-w-[920px] mt-36 mb-8 md:mt-8 lg:mt-12 py-12 md:px-24 md:mx-7;
+  @apply max-w-[880px] mt-36 md:mt-8 lg:mt-12 py-12 md:px-28 md:mx-7;
 }
 
 .content {

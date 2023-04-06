@@ -37,7 +37,7 @@ export const Navbar = () => {
   let pathname = usePathname() || '/';
   return (
     <aside className='fixed flex w-full justify-start  bg-rice-color dark:bg-zinc-900 md:bg-opacity-0'>
-      <div className='ml-2 md:ml-7 lg:ml-20 mt-5 md:mt-14 lg:mt-24 pr-5 font-serif'>
+      <div className='ml-2 md:ml-5 lg:ml-16 xl:ml-24 mt-5 md:mt-14 xl:mt-20 pr-5 font-serif'>
         <div className='top-5 mb-2 md:mx-0 md:mb-8 space-y-10'>
           <Logo />
         </div>

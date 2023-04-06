@@ -23,13 +23,13 @@ export default function RootLayout({
       <body className='flex flex-col bg-rice-color dark:bg-zinc-900'>
         <Providers>
           <DarkModeSwitch />
-          <div className='antialiased flex flex-col md:flex-row md:justify-center  bg-rice-color dark:bg-zinc-900'>
-            <Navbar />
-            <main className='flex flex-col items-center min-w-0 mt-8 md:mt-0 px-2 md:px-0'>
+          <Navbar />
+          <div className='antialiased flex flex-col h-screen md:flex-row md:justify-center bg-rice-color dark:bg-zinc-900'>
+            <main className='flex flex-col items-center justify-between min-w-0 mt-8 md:mt-0 px-2 md:px-0'>
               {children}
+              <Footer />
             </main>
           </div>
-          <Footer />
         </Providers>
       </body>
     </html>
