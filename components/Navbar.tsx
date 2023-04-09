@@ -34,12 +34,12 @@ const Logo = () => {
 export const Navbar = () => {
   let pathname = usePathname() || '/';
   return (
-    <nav className='fixed bg-rice-color dark:bg-zinc-900 '>
-      <div className='ml-2 md:ml-5 lg:ml-16 xl:ml-24 mt-5 md:mt-14 xl:mt-20 pr-5 font-serif relative'>
-        <div className='top-5 mb-2 md:mx-0 md:mb-8 space-y-10'>
+    <nav className='fixed flex w-full md:w-[120px] bg-rice-color dark:bg-zinc-900 '>
+      <div className='ml-2 md:ml-5 lg:ml-16 xl:ml-24 mt-5 md:mt-14 xl:mt-20 font-serif'>
+        <div className='top-5 mb-2 md:mx-0 md:mb-8 '>
           <Logo />
         </div>
-        <div className='flex flex-row md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0'>
+        <div className='flex flex-row md:flex-col mb-2 mt-2 md:mt-0'>
           {Object.entries(navItems).map(([path, { name }]) => {
             const isActive = path === pathname;
             return (
@@ -55,7 +55,7 @@ export const Navbar = () => {
                 )}
               >
                 <button
-                  className={clsx('btn rounded-full btn-ghost relative px-3 mr-2 md:mb-2', {
+                  className={clsx('btn btn-sm rounded-lg btn-ghost px-3 mr-2 md:mb-3', {
                     'btn-isActive': isActive,
                   })}
                 >

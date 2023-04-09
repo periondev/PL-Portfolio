@@ -24,7 +24,7 @@ export default function RootLayout({
         <Providers>
           <DarkModeSwitch />
           <Navbar />
-          <div className='antialiased flex flex-col h-screen md:flex-row md:justify-center bg-rice-color dark:bg-zinc-900'>
+          <div className='antialiased flex flex-col min-h-screen md:flex-row md:justify-center bg-rice-color dark:bg-zinc-900'>
             <main className='flex flex-col items-center justify-between min-w-0 mt-8 md:mt-0 px-2 md:px-0'>
               {children}
               <Footer />
@@ -34,17 +34,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
-
-{
-  /* <div
-className={clsx(
-  'antialiased max-w-4xl mb-20 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-28 lg:mx-auto bg-rice-color dark:bg-zinc-700'
-)}
->
-<Navbar />
-<main className='flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0'>
-  {children}
-</main>
-</div> */
 }
