@@ -27,8 +27,8 @@ a {
   box-sizing: border-box;
 }
 
-button {
-  @apply text-lg;
+.btn-isActive {
+  @apply bg-orange-400 dark:bg-neutral-400;
 }
 .container {
   @apply max-w-[880px] mt-36 md:mt-12 py-12 md:px-28 md:mx-7;
