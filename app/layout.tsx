@@ -20,12 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className='flex flex-col bg-rice-color dark:bg-zinc-900'>
+      <body className='flex flex-col'>
         <Providers>
           <DarkModeSwitch />
           <Navbar />
-          <div className='antialiased flex flex-col min-h-screen md:flex-row md:justify-center bg-rice-color dark:bg-zinc-900'>
-            <main className='flex flex-col items-center justify-between min-w-0 mt-8 md:mt-0 px-2 md:px-0'>
+          <div className='antialiased grid min-h-screen md:grid-rows-1 xl:justify-center md:pl-28 bg-rice-color dark:bg-zinc-800'>
+            <main className='flex flex-col justify-between items-center min-w-0 mt-8 md:mt-0 md:pl-8'>
               {children}
               <Footer />
             </main>

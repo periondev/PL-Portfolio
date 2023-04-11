@@ -6,11 +6,13 @@ export const Resume = () => {
         href=' '
         target='_blank'
         rel='noreferrer noopener'
-        className='gap-2 flex align-center items-center  px-5 py-2 border-2 rounded-lg select-none  border-zinc-500 hover:bg-zinc-200 dark:border-zinc-400 dark:hover:bg-zinc-800'
+        className='btn gap-2 flex align-center items-center  px-5 py-2 rounded-lg select-none border-none'
       >
         <FiLink />
-        <p className='text-lg text-center'>Resume</p>
+        Resume
+        {/* <p className='text-lg text-center'>Resume</p> */}
       </a>
     </div>
   );
 };
+//className='btn gap-2 flex align-center items-center  px-5 py-2 border-2 rounded-lg select-none  border-zinc-500 hover:bg-zinc-200 dark:border-zinc-400 dark:hover:bg-zinc-800'

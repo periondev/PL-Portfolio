@@ -33,9 +33,10 @@ const Logo = () => {
 //navbar2
 export const Navbar = () => {
   let pathname = usePathname() || '/';
+  // bg-rice-color dark:bg-zinc-900
   return (
-    <nav className='fixed flex w-full md:w-[120px] bg-rice-color dark:bg-zinc-900 '>
-      <div className='ml-2 md:ml-5 lg:ml-16 xl:ml-24 mt-5 md:mt-14 xl:mt-20 font-serif'>
+    <nav className='fixed w-full pb-2 md:pb-0 md:mr-8 md:w-36 lg:w-48 xl:w-56 md:h-full bg-neutral-300 dark:bg-zinc-700 '>
+      <div className='ml-3 md:ml-5 lg:ml-16 xl:ml-24 mt-5 md:mt-14 xl:mt-20 font-serif'>
         <div className='top-5 mb-2 md:mx-0 md:mb-8 '>
           <Logo />
         </div>
