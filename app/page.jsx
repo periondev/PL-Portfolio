@@ -14,10 +14,12 @@ export default function Home() {
         {/* Avatar */}
       </div>
       <Resume />
+      <div className='divider'></div>
       <div className='shadow-box'>
         <h2 className='text-2xl py-2'>About</h2>
         <p className='py-2'>{about()}</p>
       </div>
+      <div className='divider'></div>
       <div className='shadow-box'>
         <h2 className='text-2xl py-2'>Skills</h2>
         <p className='py-2'>{skills()}</p>
