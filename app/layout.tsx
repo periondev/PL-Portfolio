@@ -23,9 +23,9 @@ export default function RootLayout({
       <body className='flex flex-col'>
         <Providers>
           <DarkModeSwitch />
-          <Navbar />
-          <div className='antialiased grid min-h-screen md:grid-rows-1 xl:justify-center md:pl-28 bg-rice-color dark:bg-zinc-800'>
-            <main className='flex flex-col justify-between items-center min-w-0 mt-8 md:mt-0 md:pl-8'>
+          <div className='flex-col md:flex-row md:justify-between antialiased min-h-screen bg-rice-color dark:bg-zinc-800'>
+            <Navbar />
+            <main className='flex flex-col justify-between items-center min-w-0 mt-8 md:mt-0 md:pl-36 lg:pl-48 xl:pl-60'>
               {children}
               <Footer />
             </main>
