@@ -9,7 +9,7 @@ export default function ContactPage() {
   return (
     <section className='container'>
       <div className='content'>
-        <h1 className='py-2'>Contact Me</h1>
+        <h1>Contact Me</h1>
         <div className='text-4xl flex justify-center gap-14 p-2 my-8 text-gray-400'>
           <a href=' '>
             <FiMail />
