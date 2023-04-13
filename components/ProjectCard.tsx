@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ProjectType } from '@lib/types';
+import { FiGithub } from 'react-icons/fi';
 
 export const ProjectCard = ({
   projectName,
@@ -11,10 +12,10 @@ export const ProjectCard = ({
   tools,
 }: ProjectType) => {
   return (
-    <div className='my-5'>
-      <div className='card lg:card-side bg-base-100 shadow-xl'>
+    <div className='mt-5 mb-8'>
+      <div className='card card-compact lg:card-side shadow-xl bg-neutral-300 dark:bg-zinc-700'>
         <figure>
-          <Image src={previewImage} width={600} height={400} alt='Preview Image' />
+          <Image src={previewImage} width={300} height={200} alt='Preview Image' />
         </figure>
         <div className='card-body'>
           <h2 className='card-title'>{projectName}</h2>
@@ -30,15 +31,15 @@ export const ProjectCard = ({
           </div>
           <div className='card-actions justify-end'>
             {liveDemoLink && (
-              <button className='btn btn-primary'>
+              <button className='btn btn-sm btn-primary'>
                 <Link href={liveDemoLink} target='_blank'>
                   Demo
                 </Link>
               </button>
             )}
-            <button className='btn btn-primary'>
+            <button className='btn btn-circle btn-sm btn-neutral'>
               <Link href={githubLink} target='_blank'>
-                GitHub
+                <FiGithub />
               </Link>
             </button>
           </div>

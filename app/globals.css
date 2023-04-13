@@ -41,3 +41,7 @@ a {
 .shadow-box {
   @apply shadow-lg p-5 rounded-xl my-10 mx-4;
 }
+
+.badge {
+  @apply dark:text-zinc-300;
+}
