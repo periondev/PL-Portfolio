@@ -13,9 +13,9 @@ export const ProjectCard = ({
 }: ProjectType) => {
   return (
     <div className='mt-5 mb-8'>
-      <div className='card card-compact lg:card-side shadow-xl bg-neutral-300 dark:bg-zinc-700'>
+      <div className='card card-compact md:card-side shadow-xl bg-neutral-300 dark:bg-zinc-700'>
         <figure>
-          <Image src={previewImage} width={300} height={200} alt='Preview Image' />
+          <Image src={previewImage} width={640} height={400} alt='Preview Image' />
         </figure>
         <div className='card-body'>
           <h2 className='card-title'>{projectName}</h2>
@@ -29,7 +29,7 @@ export const ProjectCard = ({
               );
             })}
           </div>
-          <div className='card-actions justify-end'>
+          <div className='card-actions justify-end mt-4'>
             {liveDemoLink && (
               <button className='btn btn-sm btn-primary'>
                 <Link href={liveDemoLink} target='_blank'>

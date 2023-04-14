@@ -9,7 +9,7 @@ body {
   @apply p-0 m-0;
 }
 h1 {
-  @apply text-center text-4xl font-bold text-cyan-800 dark:text-zinc-200 py-3;
+  @apply text-center text-4xl font-bold text-cyan-800 dark:text-zinc-200 pt-3 pb-8;
 }
 h2 {
   @apply text-center text-2xl text-zinc-800 dark:text-zinc-200;
@@ -31,7 +31,7 @@ a {
   @apply bg-orange-400 dark:bg-neutral-400;
 }
 .container {
-  @apply max-w-[720px] mt-24 md:mt-12 py-12 md:px-8;
+  @apply max-w-[860px] mt-24 md:mt-12 py-12 md:px-8;
 }
 
 .content {
