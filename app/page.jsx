@@ -6,10 +6,8 @@ import { name, intro, about, skills } from 'lib/info';
 export default function Home() {
   return (
     <div className='container'>
-      <div className='content'>
-        <h1>{name}</h1>
-        <p className='text-xl py-2'>{intro()}</p>
-      </div>
+      <h1>{name}</h1>
+      <p className='text-xl py-2'>{intro()}</p>
       <div className='relative mx-auto my-10 bg-gradient-to-b from-lemon-color rounded-full h-40 w-40'>
         {/* Avatar */}
       </div>

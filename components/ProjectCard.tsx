@@ -12,37 +12,35 @@ export const ProjectCard = ({
   tools,
 }: ProjectType) => {
   return (
-    <div className='mt-5 mb-8'>
-      <div className='card card-compact md:card-side shadow-xl bg-neutral-300 dark:bg-zinc-700'>
-        <figure>
-          <Image src={previewImage} width={640} height={400} alt='Preview Image' />
-        </figure>
-        <div className='card-body'>
-          <h2 className='card-title'>{projectName}</h2>
-          <p>{description}</p>
-          <div className='flex flex-row'>
-            {tools?.map((tech: string, index: number) => {
-              return (
-                <div key={index} className='badge badge-outline mr-1'>
-                  {tech}
-                </div>
-              );
-            })}
-          </div>
-          <div className='card-actions justify-end mt-4'>
-            {liveDemoLink && (
-              <button className='btn btn-sm btn-primary'>
-                <Link href={liveDemoLink} target='_blank'>
-                  Demo
-                </Link>
-              </button>
-            )}
-            <button className='btn btn-circle btn-sm btn-neutral'>
-              <Link href={githubLink} target='_blank'>
-                <FiGithub />
+    <div className='card card-compact shadow-xl bg-neutral-300 dark:bg-zinc-700'>
+      <figure>
+        <Image src={previewImage} width={300} height={200} alt='Preview Image' className='w-full' />
+      </figure>
+      <div className='card-body'>
+        <h2 className='card-title text-start'>{projectName}</h2>
+        <p>{description}</p>
+        <div className='flex flex-wrap flex-row gap-1.5'>
+          {tools?.map((tech: string, index: number) => {
+            return (
+              <div key={index} className='badge badge-outline'>
+                {tech}
+              </div>
+            );
+          })}
+        </div>
+        <div className='card-actions justify-end'>
+          {liveDemoLink && (
+            <button className='btn btn-sm btn-primary'>
+              <Link href={liveDemoLink} target='_blank'>
+                Demo
               </Link>
             </button>
-          </div>
+          )}
+          <button className='btn btn-circle btn-sm btn-neutral'>
+            <Link href={githubLink} target='_blank'>
+              <FiGithub />
+            </Link>
+          </button>
         </div>
       </div>
     </div>

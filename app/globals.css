@@ -31,15 +31,11 @@ a {
   @apply bg-orange-400 dark:bg-neutral-400;
 }
 .container {
-  @apply max-w-[860px] mt-24 md:mt-12 py-12 md:px-8;
-}
-
-.content {
-  @apply px-5 mx-4;
+  @apply max-w-[854px] mt-24 md:mt-12 py-12 px-8;
 }
 
 .shadow-box {
-  @apply shadow-lg p-5 rounded-xl my-10 mx-4;
+  @apply shadow-lg p-5 rounded-xl my-10;
 }
 
 .badge {
