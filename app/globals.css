@@ -9,13 +9,17 @@ body {
   @apply p-0 m-0;
 }
 h1 {
-  @apply text-center text-4xl font-bold text-cyan-800 dark:text-zinc-200 pt-3 pb-8;
+  @apply text-center text-4xl font-bold text-cyan-800 dark:text-neutral-200 pt-3 pb-8;
 }
 h2 {
-  @apply text-center text-2xl text-zinc-800 dark:text-zinc-200;
+  @apply text-center text-2xl text-neutral-800 dark:text-neutral-200;
 }
 p {
-  @apply text-base text-zinc-600 dark:text-zinc-400;
+  @apply text-base text-neutral-600 dark:text-neutral-400;
+}
+
+.sub-title {
+  @apply text-xl py-2 text-neutral-600 dark:text-neutral-300;
 }
 
 a {
@@ -27,8 +31,11 @@ a {
   box-sizing: border-box;
 }
 
+.nav-link {
+  @apply text-neutral-700 dark:text-neutral-200 flex align-middle;
+}
 .btn-isActive {
-  @apply bg-orange-400 dark:bg-neutral-400;
+  @apply bg-amber-400 hover:bg-amber-500 dark:bg-amber-600 dark:hover:bg-amber-700;
 }
 .container {
   @apply max-w-[854px] mt-24 md:mt-12 py-12 px-8;
@@ -44,8 +51,4 @@ a {
 
 .link-on-hover {
   @apply transition-all hover:scale-125 ease-in-out delay-100;
-}
-
-.sub-title {
-  @apply text-xl py-2;
 }

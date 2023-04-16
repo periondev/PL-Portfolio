@@ -12,7 +12,7 @@ export const ProjectCard = ({
   tools,
 }: ProjectType) => {
   return (
-    <div className='card card-compact shadow-xl bg-neutral-300 dark:bg-zinc-700'>
+    <div className='card card-compact shadow-2xl'>
       <figure>
         <Image src={previewImage} width={300} height={200} alt='Preview Image' className='w-full' />
       </figure>

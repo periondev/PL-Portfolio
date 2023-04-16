@@ -26,7 +26,8 @@ export const DarkModeSwitch = () => {
     <div className='fixed z-20 flex w-full justify-end items-end py-3 px-4'>
       <input
         type='checkbox'
-        className='toggle toggle-primary'
+        aria-label='Toggle theme'
+        className='toggle toggle-primary dark:opacity-60'
         onClick={() => {
           toggleTheme();
         }}
