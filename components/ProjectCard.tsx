@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ProjectType } from '@lib/types';
-import { FiGithub } from 'react-icons/fi';
+import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 export const ProjectCard = ({
   projectName,
@@ -30,17 +30,13 @@ export const ProjectCard = ({
         </div>
         <div className='card-actions justify-end'>
           {liveDemoLink && (
-            <button className='btn btn-sm btn-primary'>
-              <Link href={liveDemoLink} target='_blank'>
-                Demo
-              </Link>
-            </button>
-          )}
-          <button className='btn btn-circle btn-sm btn-neutral'>
-            <Link href={githubLink} target='_blank'>
-              <FiGithub />
+            <Link href={liveDemoLink} target='_blank' title='Live Demo'>
+              <FiExternalLink className='text-3xl link-on-hover dark:text-white' />
             </Link>
-          </button>
+          )}
+          <Link href={githubLink} target='_blank' title='Source Code on GitHub'>
+            <FiGithub className='text-3xl link-on-hover dark:text-white' />
+          </Link>
         </div>
       </div>
     </div>

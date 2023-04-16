@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className='container'>
       <h1>{name}</h1>
-      <p className='text-xl py-2'>{intro()}</p>
+      <p className='sub-title'>{intro()}</p>
       <div className='relative mx-auto my-10 bg-gradient-to-b from-lemon-color rounded-full h-40 w-40'>
         {/* Avatar */}
       </div>

@@ -41,3 +41,11 @@ a {
 .badge {
   @apply dark:text-zinc-300;
 }
+
+.link-on-hover {
+  @apply transition-all hover:scale-125 ease-in-out delay-100;
+}
+
+.sub-title {
+  @apply text-xl py-2;
+}
