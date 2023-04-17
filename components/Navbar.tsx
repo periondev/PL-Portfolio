@@ -1,8 +1,8 @@
 'use client';
-import clsx from 'clsx';
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import clsx from 'clsx';
+import { usePathname } from 'next/navigation';
 
 const navItems = {
   '/': { name: 'Home' },
@@ -25,7 +25,7 @@ const Logo = () => {
   return (
     <Link aria-label='Peri Lin' href='/'>
       <span className='flex my-2 px-3 py-2' onClick={() => scrollToTop()}>
-        <Image src='/logo.svg' alt='logo' width={60} height={60} />
+        <Image src='/logo.svg' alt='logo' width='0' height='0' className='w-[60px] h-auto' />
       </span>
     </Link>
   );
