@@ -32,17 +32,17 @@ a {
 }
 
 .nav-link {
-  @apply text-neutral-700 dark:text-neutral-200 flex align-middle;
+  @apply text-neutral-700 dark:text-neutral-200 flex align-middle font-sans;
 }
 .btn-isActive {
-  @apply bg-amber-400 hover:bg-amber-500 dark:bg-amber-600 dark:hover:bg-amber-700;
+  @apply bg-amber-400 dark:bg-indigo-500 pointer-events-none;
 }
 .container {
   @apply max-w-[854px] mt-24 md:mt-12 py-12 px-8;
 }
 
 .shadow-box {
-  @apply shadow-lg p-5 rounded-xl my-10;
+  @apply shadow-xl p-5 rounded-xl my-10;
 }
 
 .badge {

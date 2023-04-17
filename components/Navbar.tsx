@@ -39,24 +39,18 @@ export const Navbar = () => {
         <div className='top-5 mb-2 md:mx-0 md:mb-8 '>
           <Logo />
         </div>
-        <div className='flex flex-row md:flex-col mb-2 mt-2 md:mt-0'>
+        <div className='flex overflow-x-auto flex-row md:flex-col mb-2 mt-2 md:mt-0'>
           {Object.entries(navItems).map(([path, { name }]) => {
             const isActive = path === pathname;
             return (
-              <Link
-                key={path}
-                href={path}
-                className={clsx('nav-link', {
-                  'font-bold': isActive,
-                })}
-              >
-                <button
-                  className={clsx('btn btn-sm rounded-lg btn-ghost px-3 mr-2 md:mb-3', {
+              <Link key={path} href={path} className='nav-link'>
+                <span
+                  className={clsx('btn btn-sm rounded-lg btn-ghost px-3 md:mb-3', {
                     'btn-isActive': isActive,
                   })}
                 >
                   {name}
-                </button>
+                </span>
               </Link>
             );
           })}
