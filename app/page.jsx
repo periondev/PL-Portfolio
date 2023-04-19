@@ -1,7 +1,7 @@
 import { Contact } from '../components/Contact';
 import { Resume } from '../components/Resume';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { name, intro, about, skills } from 'lib/info';
+import { name, intro, about } from 'lib/info';
+import { SkillArea } from 'components/SkillArea';
 
 export default function Home() {
   return (
@@ -12,17 +12,16 @@ export default function Home() {
         {/* Avatar */}
       </div>
       <Resume />
-      <div className='divider'></div>
-      <div className='shadow-box'>
-        <h2 className='text-2xl py-2'>About</h2>
+      <div className='divider py-8'></div>
+      <div>
+        <h2>About</h2>
         <p className='py-2'>{about()}</p>
       </div>
-      <div className='divider'></div>
-      <div className='shadow-box'>
-        <h2 className='text-2xl py-2'>Skills</h2>
-        <p className='py-2'>{skills()}</p>
+      <div>
+        <h2>Skills</h2>
+        <SkillArea />
       </div>
-      {/* Cards */}
+      <div className='divider py-8'></div>
       <Contact />
     </div>
   );

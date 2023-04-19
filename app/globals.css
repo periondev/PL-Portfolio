@@ -12,7 +12,10 @@ h1 {
   @apply text-center text-4xl font-bold text-cyan-800 dark:text-neutral-200 pt-3 pb-8;
 }
 h2 {
-  @apply text-center text-2xl text-neutral-800 dark:text-neutral-200;
+  @apply text-center text-2xl text-neutral-800 dark:text-neutral-200 pb-2;
+}
+h3 {
+  @apply text-xl text-neutral-700 dark:text-neutral-300 py-2;
 }
 p {
   @apply text-base text-neutral-600 dark:text-neutral-400;
@@ -31,24 +34,37 @@ a {
   box-sizing: border-box;
 }
 
+/* Home */
+.container {
+  @apply max-w-[854px] mt-24 md:mt-12 py-12 px-8;
+}
+.sub-title {
+  @apply text-xl py-2 text-neutral-600 dark:text-neutral-300;
+}
+
+/* NavBar */
 .nav-link {
   @apply text-neutral-700 dark:text-neutral-200 flex align-middle font-sans;
 }
 .btn-isActive {
   @apply bg-amber-400 dark:bg-indigo-500 pointer-events-none;
 }
-.container {
-  @apply max-w-[854px] mt-24 md:mt-12 py-12 px-8;
-}
 
-.shadow-box {
-  @apply shadow-xl p-5 rounded-xl my-10;
-}
-
+/* ProjectCard */
 .badge {
   @apply dark:text-zinc-300;
 }
-
 .link-on-hover {
   @apply transition-all hover:scale-125 ease-in-out delay-100;
+}
+
+/* SkillArea */
+.skill-container {
+  @apply grid grid-cols-2 md:grid-cols-3 gap-3 mb-3;
+}
+.skill-Item {
+  @apply flex px-4 py-3 items-center gap-3 rounded-lg shadow-md text-base text-neutral-800 dark:text-neutral-200 bg-stone-200 dark:bg-zinc-600;
+}
+.skill-icon {
+  @apply w-6 h-6 text-neutral-800 dark:text-neutral-200;
 }

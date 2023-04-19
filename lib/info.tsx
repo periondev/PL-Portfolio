@@ -1,4 +1,4 @@
-import { ProjectType } from '@lib/types';
+import { ProjectType } from './types';
 
 export const name = 'Peri Lin';
 export const intro = () => {
@@ -15,10 +15,6 @@ export const about = () => {
       {`I'm passionate about frontend development and have created projects on React, Next.js, and web app development.`}
     </>
   );
-};
-
-export const skills = () => {
-  return <>{`React, Next.js, Node.js....`}</>;
 };
 
 export const items: ProjectType[] = [
