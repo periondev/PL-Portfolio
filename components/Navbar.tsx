@@ -34,7 +34,7 @@ const Logo = () => {
 export const Navbar = () => {
   let pathname = usePathname() || '/';
   return (
-    <nav className='fixed z-10 w-full pb-2 md:pb-0 md:mr-8 md:w-36 lg:w-48 xl:w-60 md:h-full shadow-lg bg-neutral-300 dark:bg-zinc-700'>
+    <nav className='fixed z-10 w-full pb-2 md:pb-0 md:mr-8 md:w-36 lg:w-48 xl:w-60 md:h-full shadow-lg bg-stone-300 dark:bg-zinc-700'>
       <div className='ml-3 md:ml-5 lg:ml-16 xl:ml-24 mt-5 md:mt-14 xl:mt-20 font-serif'>
         <div className='top-5 mb-2 md:mx-0 md:mb-8 '>
           <Logo />

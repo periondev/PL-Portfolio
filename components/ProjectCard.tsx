@@ -17,7 +17,7 @@ export const ProjectCard = ({
         <Image src={previewImage} width={300} height={200} alt='Preview Image' className='w-full' />
       </figure>
       <div className='card-body'>
-        <h2 className='card-title text-start'>{projectName}</h2>
+        <h2 className='card-title text-start p-0'>{projectName}</h2>
         <p>{description}</p>
         <div className='flex flex-wrap flex-row gap-1.5'>
           {tools?.map((tech: string, index: number) => {
