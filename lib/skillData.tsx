@@ -8,9 +8,11 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiChakraui,
+  SiBootstrap,
   SiGit,
   SiNodedotjs,
   SiMongodb,
+  SiExpress,
 } from 'react-icons/si';
 
 export const languages: SkillType[] = [
@@ -25,10 +27,12 @@ export const jsAndCssTools: SkillType[] = [
   { name: 'React', icon: SiReact },
   { name: 'Tailwind CSS', icon: SiTailwindcss },
   { name: 'Chakra UI', icon: SiChakraui },
+  { name: 'Bootstrap', icon: SiBootstrap },
 ];
 
 export const backendAndGit: SkillType[] = [
   { name: 'Node.js', icon: SiNodedotjs },
+  { name: 'Express', icon: SiExpress },
   { name: 'MongoDB', icon: SiMongodb },
   { name: 'Git', icon: SiGit },
 ];
