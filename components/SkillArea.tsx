@@ -15,7 +15,7 @@ export const SkillArea = () => {
           );
         })}
       </div>
-      <h3>Frameworks and libraries</h3>
+      <h3>Frameworks and Libraries</h3>
       <div className='skill-container'>
         {jsAndCssTools.map((jsAndCssTool: SkillType, index: number) => {
           const Icon = jsAndCssTool.icon;
