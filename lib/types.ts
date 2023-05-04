@@ -1,3 +1,4 @@
+import { type } from 'os';
 import { IconType } from 'react-icons';
 
 export type ProjectType = {
@@ -12,4 +13,11 @@ export type ProjectType = {
 export type SkillType = {
   name: string;
   icon: IconType;
+};
+
+export type PostType = {
+  postTitle: string;
+  description: string;
+  postLink: string;
+  tools: string[];
 };
