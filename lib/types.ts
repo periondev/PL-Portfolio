@@ -20,4 +20,5 @@ export type PostType = {
   description: string;
   postLink: string;
   tools: string[];
+  postDate: string;
 };
