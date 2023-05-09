@@ -12,7 +12,7 @@ h1 {
   @apply text-center text-4xl font-bold text-cyan-800 dark:text-neutral-200 pt-3 pb-8;
 }
 h2 {
-  @apply text-center text-2xl font-bold text-neutral-800 dark:text-neutral-200 pb-2;
+  @apply text-center text-2xl font-bold text-neutral-800 dark:text-neutral-200 py-2;
 }
 h3 {
   @apply text-xl text-neutral-700 dark:text-neutral-300 py-2;
@@ -63,7 +63,7 @@ a {
   @apply grid grid-cols-2 md:grid-cols-3 gap-3 mb-3;
 }
 .skill-Item {
-  @apply flex px-4 py-3 items-center gap-3 rounded-lg shadow-md text-base text-neutral-800 dark:text-neutral-200 bg-stone-200 dark:bg-zinc-600;
+  @apply flex px-4 py-3 items-center gap-3 rounded-lg shadow-md text-base text-neutral-800 dark:text-neutral-200 bg-zinc-300 dark:bg-zinc-600;
 }
 .skill-icon {
   @apply w-6 h-6 text-neutral-800 dark:text-neutral-200;
