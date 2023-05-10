@@ -15,7 +15,7 @@ export default function Home() {
       <div className='divider py-8'></div>
       <div>
         <h2>About</h2>
-        <p className='py-2'>{about()}</p>
+        <p className='py-2 px-8'>{about()}</p>
       </div>
       <div>
         <h2>Skills</h2>
