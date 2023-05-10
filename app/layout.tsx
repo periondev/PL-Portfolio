@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import { Navbar } from '../components/Navbar';
 import { DarkModeSwitch } from '../components/DarkModeSwitch';
 import { Footer } from '../components/Footer';
+import { ScrollToTopBtn } from '@components/ScrollButton';
+
 export const metadata: Metadata = {
   title: { default: 'Peri Lin Portfolio', template: '%s | Peri Lin Portfolio' },
   description: 'Front-end developer portfolio',
@@ -29,6 +31,7 @@ export default function RootLayout({
               {children}
               <Footer />
             </main>
+            <ScrollToTopBtn />
           </div>
         </Providers>
       </body>
