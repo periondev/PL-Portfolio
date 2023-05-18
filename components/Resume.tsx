@@ -6,7 +6,7 @@ export const Resume = () => {
       <Link
         href=' '
         target='_blank'
-        className='btn rounded-lg gap-3 px-10 shadow-lg border-none bg-teal-700 hover:bg-teal-800 '
+        className='btn rounded-lg gap-3 px-10 shadow-lg border-none text-white bg-teal-700 hover:bg-teal-800 '
       >
         <FiLink />
         Resume

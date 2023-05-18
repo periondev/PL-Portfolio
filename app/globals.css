@@ -41,7 +41,7 @@ a {
   @apply text-neutral-600 dark:text-neutral-300 flex align-middle font-sans;
 }
 .btn-isActive {
-  @apply text-orange-500 dark:text-amber-300 pointer-events-none;
+  @apply text-orange-600 dark:text-amber-300 pointer-events-none;
 }
 
 /* ProjectCard */
