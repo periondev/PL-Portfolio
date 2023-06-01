@@ -37,6 +37,9 @@ a {
 }
 
 /* NavBar */
+.nav-container {
+  @apply fixed z-10 w-full md:pb-0 md:mr-8 md:w-36 lg:w-48 xl:w-60 md:h-full shadow-lg bg-zinc-300 dark:bg-zinc-700;
+}
 .nav-link {
   @apply text-neutral-600 dark:text-neutral-300 flex align-middle font-sans;
 }
@@ -57,7 +60,7 @@ a {
   @apply grid grid-cols-2 md:grid-cols-3 gap-3 mb-3;
 }
 .skill-Item {
-  @apply flex px-4 py-3 items-center gap-3 rounded-lg shadow-md text-base text-neutral-800 dark:text-neutral-200 bg-zinc-300 dark:bg-zinc-600;
+  @apply flex px-4 py-3 items-center gap-3 rounded-lg shadow-md text-base text-neutral-800 dark:text-neutral-200 bg-amber-200 dark:bg-zinc-600;
 }
 .skill-icon {
   @apply w-6 h-6 text-neutral-800 dark:text-neutral-200;
