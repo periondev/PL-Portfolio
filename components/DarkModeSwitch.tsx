@@ -22,9 +22,6 @@ export const DarkModeSwitch = () => {
 
   return (
     <div className='fixed z-20 flex w-full justify-end items-end py-3 px-4'>
-      <span className='label-text dark:text-orange-50'>
-        <p>The current theme is {theme} </p>
-      </span>
       <input
         type='checkbox'
         aria-label='Toggle theme'
