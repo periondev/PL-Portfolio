@@ -13,8 +13,8 @@ export const ProjectCard = ({
 }: ProjectType) => {
   return (
     <div className='card card-compact shadow-2xl'>
-      <figure>
-        <Image src={previewImage} width={300} height={200} alt='Preview Image' className='w-full' />
+      <figure className='relative aspect-video w-full overflow-hidden'>
+        <Image src={previewImage} fill={true} sizes='100' alt='Preview Image' />
       </figure>
       <div className='card-body'>
         <h2 className='card-title text-start p-0'>{projectName}</h2>
