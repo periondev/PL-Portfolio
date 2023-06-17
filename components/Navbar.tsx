@@ -17,17 +17,13 @@ const navItems = {
   },
 };
 
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
-
 export const Navbar = () => {
   let pathname = usePathname() || '/';
   return (
     <nav className='nav-container'>
       <div className='ml-3 md:ml-5 lg:ml-16 xl:ml-24 mt-5 md:mt-14 xl:mt-20 font-serif'>
         <div className='top-5 md:mx-0 md:mb-8 '>
-          <Link aria-label='Peri Lin' href='/' onClick={scrollToTop}>
+          <Link aria-label='Peri Lin' href='/'>
             <SVGLogo />
           </Link>
         </div>
