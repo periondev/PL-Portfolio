@@ -7,7 +7,7 @@ export const items: ProjectType[] = [
     description:
       'Beautiful and minimal player as an abstraction of Youtube Playlist. It allows users to play audiovisual content on the card intuitively.',
     githubLink: 'https://github.com/PeriYumYum/youtube-playlist-next-app',
-    liveDemoLink: 'https://youtube-playlist-next-app.vercel.app/',
+    liveDemoLink: 'https://my-youtube-collection.vercel.app/',
     tools: ['Next.js', 'React', 'Node.js', 'Chakra UI', 'Youtube Data API'],
   },
   {
@@ -29,10 +29,10 @@ export const items: ProjectType[] = [
   },
   {
     projectName: 'Peri Portfolio',
-    previewImage: 'https://picsum.photos/640/400',
+    previewImage: '/project-images/pl-portfolio.webp',
     description:
-      'My personal portfolio website you are viewing now, is built with Next.js 13, Tailwindcss and TypeScript.',
+      'My personal portfolio website you are viewing now, is built with the following tools. Click the GitHub button to view the source code!',
     githubLink: 'https://github.com/PeriYumYum/Next-Tailwind-Portfolio',
-    tools: ['Next.js', 'React', 'Node.js', 'Tailwind CSS', 'TypeScript'],
+    tools: ['Next.js', 'React', 'Node.js', 'Tailwind CSS', 'daisyUI', 'TypeScript'],
   },
 ];
