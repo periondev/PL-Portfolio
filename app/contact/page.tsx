@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FiMail, FiGithub } from 'react-icons/fi';
 import type { Metadata } from 'next';
+import { contactIntro, email, mailTo, myGithub } from '@lib/info';
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'My contact information',
@@ -10,28 +11,33 @@ export default function ContactPage() {
   return (
     <section className='container'>
       <h1>Contact</h1>
-      <p className='sub-title'>
-        I&apos;m currently open for a fulltime Frontend Developer role. If you want to discuss about
-        that, feel free to contact me.
-      </p>
-      <div className='text-4xl flex justify-center gap-14 p-2 my-8 text-gray-400'>
-        <Link
-          href='mailto:periondev@gmail.com'
-          target='_blank'
-          className='tooltip tooltip-bottom'
-          data-tip='E-mail Me'
-        >
-          <FiMail className='link-on-hover' />
-        </Link>
-        <Link
-          href='https://github.com/PeriYumYum'
-          target='_blank'
-          className='tooltip tooltip-bottom'
-          data-tip='Visit My GitHub'
-        >
-          <FiGithub className='link-on-hover' />
-        </Link>
-      </div>
+      <p className='sub-title'>{contactIntro()}</p>
+      <ul className='flex flex-col w-full md:w-2/3 lg:w-1/2 p-6 mx-auto break-all text-2xl'>
+        <li className='sub-title hover:text-teal-500'>
+          <Link
+            title='E-mail Me'
+            href={mailTo}
+            target='_blank'
+            className='flex gap-4 py-2'
+            prefetch={false}
+          >
+            <FiMail className='self-center' />
+            {email}
+          </Link>
+        </li>
+        <li className='sub-title hover:text-indigo-500'>
+          <Link
+            title='Visit My GitHub'
+            href={myGithub}
+            target='_blank'
+            className='flex gap-4 py-2'
+            prefetch={false}
+          >
+            <FiGithub className='self-center' />
+            Periondev
+          </Link>
+        </li>
+      </ul>
     </section>
   );
 }
