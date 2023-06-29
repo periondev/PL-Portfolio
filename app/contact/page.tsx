@@ -21,7 +21,7 @@ export default function ContactPage() {
             className='flex gap-4 py-2'
             prefetch={false}
           >
-            <FiMail className='self-center' />
+            <FiMail className='self-center shrink-0' />
             {email}
           </Link>
         </li>
@@ -33,7 +33,7 @@ export default function ContactPage() {
             className='flex gap-4 py-2'
             prefetch={false}
           >
-            <FiGithub className='self-center' />
+            <FiGithub className='self-center shrink-0' />
             Periondev
           </Link>
         </li>
