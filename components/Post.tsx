@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { PostType } from '@lib/types';
 
-export const Post = ({ postTitle, description, postLink, tools, postDate }: PostType) => {
+export const Post = ({ postTitle, description, postLink, tags, postDate }: PostType) => {
   const truncateText = (text: string, maxLength: number) => {
     if (text.length > maxLength) {
       return text.slice(0, maxLength) + '...';
@@ -19,7 +19,7 @@ export const Post = ({ postTitle, description, postLink, tools, postDate }: Post
         </Link>
         <p>{truncatedText}</p>
         <div className='flex flex-wrap flex-row gap-1.5'>
-          {tools.map((tech: string, index: number) => {
+          {tags?.map((tech: string, index: number) => {
             return (
               <div key={index} className='badge badge-outline'>
                 {tech}

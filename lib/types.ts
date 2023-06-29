@@ -1,4 +1,3 @@
-import { type } from 'os';
 import { IconType } from 'react-icons';
 
 export type ProjectType = {
@@ -19,6 +18,6 @@ export type PostType = {
   postTitle: string;
   description: string;
   postLink: string;
-  tools: string[];
+  tags?: string[];
   postDate: string;
 };
