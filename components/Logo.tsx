@@ -4,7 +4,7 @@ export const SVGLogo = () => {
       version='1.0'
       xmlns='http://www.w3.org/2000/svg'
       width='66px'
-      height='auto'
+      height='100%'
       viewBox='0 0 103.000000 95.000000'
       preserveAspectRatio='xMidYMid meet'
     >
