@@ -25,6 +25,7 @@ export const DarkModeSwitch = () => {
       <input
         type='checkbox'
         aria-label='Toggle theme'
+        name='Toggle theme'
         className='toggle opacity-75 bg-slate-600 dark:bg-cyan-700'
         onClick={toggleTheme}
       />
