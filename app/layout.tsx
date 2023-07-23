@@ -9,9 +9,6 @@ import { ScrollToTopBtn } from '@components/ScrollButton';
 export const metadata: Metadata = {
   title: { default: 'Peri Lin Portfolio', template: '%s | Peri Lin Portfolio' },
   description: 'Front-end developer portfolio',
-  icons: {
-    shortcut: '/favicon.ico',
-  },
 };
 export default function RootLayout({
   // Layouts must accept a children prop.
