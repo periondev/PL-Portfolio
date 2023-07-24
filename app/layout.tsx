@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className='flex flex-col'>
         <Providers>
           <DarkModeSwitch />
-          <div className='flex-col md:flex-row md:justify-between min-h-screen bg-orange-50 dark:bg-zinc-800'>
+          <div className='flex-col md:flex-row md:justify-between min-h-screen bg-orange-50 dark:bg-zinc-900'>
             <Navbar />
             <main className='flex flex-col justify-between items-center min-w-0 mt-8 md:mt-0 md:pl-36 lg:pl-48 xl:pl-60'>
               {children}
