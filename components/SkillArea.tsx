@@ -10,7 +10,7 @@ export const SkillArea = () => {
           return (
             <div key={index} className='skill-Item'>
               <Icon className='skill-icon' />
-              {lan.name}
+              <p>{lan.name}</p>
             </div>
           );
         })}
@@ -22,7 +22,7 @@ export const SkillArea = () => {
           return (
             <div key={index} className='skill-Item'>
               <Icon className='skill-icon' />
-              {jsAndCssTool.name}
+              <p>{jsAndCssTool.name}</p>
             </div>
           );
         })}
@@ -34,7 +34,7 @@ export const SkillArea = () => {
           return (
             <div key={index} className='skill-Item'>
               <Icon className='skill-icon' />
-              {backendAndGit.name}
+              <p>{backendAndGit.name}</p>
             </div>
           );
         })}
