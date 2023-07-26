@@ -1,34 +1,61 @@
+# My portfolio 2023 (繁體中文)
+
+Welcome to the GitHub repository of my personal portfolio website! This project was built using Next.js framework, Tailwind CSS, and TypeScript. The live version of the website is deployed and accessible at https://periondev.vercel.app/.
+
+## Features
+
+- Responsive design with sidebar
+- Dark mode support with a toggle button using Tailwind CSS and daisyUI
+- Fast page rendering with Next.js App router
+
+## Technologies Used
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com), [daisyUI](https://daisyui.com/)
+- **Deployment**: [Vercel](https://vercel.com)
 
-First, run the development server:
+## Running Locally
+
+This application requires Node.js v16.8.0 or later.
+To run the project locally on your machine, follow these steps:
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/periondev/PL-Portfolio.git
+```
+
+2. Move to the project directory:
+
+```bash
+cd PL-Portfolio
+```
+
+3. Install dependencies:
+
+```bash
+pnpm install
+```
+
+4. Start the development server:
+
+```bash
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Usage
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+You are welcome to explore the codebase, use this code as inspiration or template, and adapt it to build your own website.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Please remember to remove any of my personal information to create a unique and personalized portfolio😎.
 
-## Learn More
+If you find this project helpful or well-done, I would greatly appreciate your support by giving it a GitHub star⭐.
+Thank you for visiting my repository and checking out my personal portfolio website.
 
-To learn more about Next.js, take a look at the following resources:
+Happy coding! 🚀
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Last updated: [July 26, 2023]
