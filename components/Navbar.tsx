@@ -20,7 +20,7 @@ const navItems = {
 export const Navbar = () => {
   let pathname = usePathname() || '/';
   return (
-    <nav className='nav-container'>
+    <nav className='fixed z-10 w-full md:pb-0 md:mr-8 md:w-36 lg:w-48 xl:w-60 md:h-full shadow-lg bg-zinc-300 dark:bg-zinc-700'>
       <div className='ml-3 md:ml-5 lg:ml-16 xl:ml-24 mt-5 md:mt-14 xl:mt-20 font-serif'>
         <div className='top-5 md:mx-0 md:mb-8 '>
           <Link aria-label='Peri Lin' href='/'>
@@ -31,10 +31,14 @@ export const Navbar = () => {
           {Object.entries(navItems).map(([path, { name }]) => {
             const isActive = path === pathname;
             return (
-              <Link key={path} href={path} className='nav-link'>
+              <Link
+                key={path}
+                href={path}
+                className='text-neutral-700 dark:text-neutral-300 flex align-middle font-sans'
+              >
                 <span
                   className={clsx('btn btn-sm rounded-lg btn-ghost px-3 md:mb-3', {
-                    'btn-isActive': isActive,
+                    'text-orange-700 dark:text-amber-300 pointer-events-none': isActive,
                   })}
                 >
                   {name}
