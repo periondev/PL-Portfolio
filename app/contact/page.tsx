@@ -11,9 +11,9 @@ export default function ContactPage() {
   return (
     <section className='container'>
       <h1>Contact</h1>
-      <p className='sub-title'>{contactIntro()}</p>
+      <p className='sub-title'>{contactIntro}</p>
       <ul className='flex flex-col w-full md:w-2/3 lg:w-1/2 p-6 mx-auto break-all text-2xl'>
-        <li className='sub-title hover:text-teal-500'>
+        <li className='sub-title font-bold hover:text-teal-500'>
           <Link
             title='E-mail Me'
             href={mailTo}
@@ -25,7 +25,7 @@ export default function ContactPage() {
             {email}
           </Link>
         </li>
-        <li className='sub-title hover:text-indigo-500'>
+        <li className='sub-title font-bold hover:text-indigo-500'>
           <Link
             title='Visit My GitHub'
             href={myGithub}
@@ -34,7 +34,7 @@ export default function ContactPage() {
             prefetch={false}
           >
             <FiGithub className='self-center shrink-0' />
-            Periondev
+            periondev
           </Link>
         </li>
       </ul>
