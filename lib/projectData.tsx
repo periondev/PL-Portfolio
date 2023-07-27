@@ -32,7 +32,7 @@ export const items: ProjectType[] = [
     previewImage: '/project-images/pl-portfolio.webp',
     description:
       'My personal portfolio website you are viewing now, is built with the following tools. Click the GitHub button to view the source code!',
-    githubLink: 'https://github.com/periondev/Next-Tailwind-Portfolio',
+    githubLink: 'https://github.com/periondev/PL-Portfolio',
     tools: ['Next.js', 'React', 'Node.js', 'Tailwind CSS', 'daisyUI', 'TypeScript'],
   },
 ];
