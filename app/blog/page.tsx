@@ -13,7 +13,7 @@ export default function BlogPage() {
       <h1>Blog</h1>
       <p className='sub-title'>My recent posts ...</p>
       <div className='grid gap-y-6 my-6'>
-        {posts.map((post, index) => {
+        {posts.map((post) => {
           return <Post key={post.postTitle} {...post} />;
         })}
       </div>
