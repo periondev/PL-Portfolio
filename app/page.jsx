@@ -8,25 +8,25 @@ export default function Home() {
   return (
     <div className='container'>
       <h1>{name}</h1>
-      <p className='sub-title'>{intro()}</p>
+      <p className='sub-title font-bold text-center'>{intro}</p>
       <div className='avatar flex justify-center'>
         <div className='w-40 rounded-full relative mx-auto my-10'>
           <Image src='/avatar.webp' fill={true} sizes='100' alt='avatar' />
         </div>
       </div>
       <Resume />
-      <div className='divider py-8'></div>
+      <hr className='hr-divider' />
       <div>
-        <h2>About</h2>
-        <p className='py-2 px-8'>{about()}</p>
+        <h2 className='main-title'>About</h2>
+        <p className='py-2 px-8'>{about}</p>
       </div>
-      <div className='divider py-8'></div>
+      <hr className='hr-divider' />
       <div>
-        <h2>Skills</h2>
+        <h2 className='main-title'>Skills</h2>
         <SkillArea />
       </div>
-      <div className='divider py-8'></div>
-      <h2>Currently listening to</h2>
+      <hr className='hr-divider' />
+      <h2 className='main-title'>Currently listening to</h2>
       <Playlist />
     </div>
   );

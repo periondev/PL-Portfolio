@@ -18,7 +18,7 @@ h3 {
   @apply text-xl text-neutral-700 dark:text-neutral-300 py-2;
 }
 p {
-  @apply text-base text-neutral-600 dark:text-neutral-400;
+  @apply text-base text-neutral-600 dark:text-neutral-300;
 }
 a {
   color: inherit;
@@ -28,12 +28,14 @@ a {
   box-sizing: border-box;
 }
 
-/* Base */
 .container {
   @apply max-w-[854px] mt-24 md:mt-12 py-12 px-5 lg:px-10;
 }
 .sub-title {
   @apply text-xl text-neutral-600 dark:text-neutral-300 px-6;
+}
+.hr-divider {
+  @apply h-0.5 mx-auto my-12 bg-stone-200 border-0 rounded dark:opacity-10;
 }
 
 /* NavBar */
@@ -41,10 +43,10 @@ a {
   @apply fixed z-10 w-full md:pb-0 md:mr-8 md:w-36 lg:w-48 xl:w-60 md:h-full shadow-lg bg-zinc-300 dark:bg-zinc-700;
 }
 .nav-link {
-  @apply text-neutral-600 dark:text-neutral-300 flex align-middle font-sans;
+  @apply text-neutral-700 dark:text-neutral-300 flex align-middle font-sans;
 }
 .btn-isActive {
-  @apply text-orange-600 dark:text-amber-300 pointer-events-none;
+  @apply text-orange-700 dark:text-amber-300 pointer-events-none;
 }
 
 /* ProjectCard */
