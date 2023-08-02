@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+
 html,
 body {
   @apply p-0 m-0;
@@ -43,7 +41,7 @@ a {
   @apply grid grid-cols-2 md:grid-cols-3 gap-3 mb-3;
 }
 .skill-Item {
-  @apply flex px-4 py-3 items-center gap-3 rounded-lg border-2 border-zinc-300 dark:border-zinc-600;
+  @apply flex px-4 py-3 items-center gap-3 rounded-lg shadow-lg border-2 border-zinc-300 dark:border-zinc-600;
 }
 .skill-icon {
   @apply w-6 h-6 text-neutral-800 dark:text-neutral-200;
