@@ -18,7 +18,7 @@ export default function ContactPage() {
             title='E-mail Me'
             href={mailTo}
             target='_blank'
-            className='flex gap-4 py-2'
+            className='flex gap-3 py-2'
             prefetch={false}
           >
             <FiMail className='self-center shrink-0' />
@@ -30,7 +30,7 @@ export default function ContactPage() {
             title='Visit My GitHub'
             href={myGithub}
             target='_blank'
-            className='flex gap-4 py-2'
+            className='flex gap-3 py-2'
             prefetch={false}
           >
             <FiGithub className='self-center shrink-0' />
