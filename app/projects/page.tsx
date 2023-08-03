@@ -11,7 +11,7 @@ export default function ProjectsPage() {
   return (
     <section className='container'>
       <h1>Projects</h1>
-      <p className='sub-title'>{`Some of the side projects I've worked on:`}</p>
+      <p className='sub-title'>{`我近期開發的一些 side projects`}</p>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-y-10 my-6'>
         {items.map((item) => {
           return <ProjectCard key={item.projectName} {...item} />;
