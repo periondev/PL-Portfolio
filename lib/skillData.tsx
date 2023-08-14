@@ -1,3 +1,5 @@
+// https://react-icons.github.io/react-icons
+
 import { SkillType } from './types';
 import {
   SiHtml5,
@@ -5,6 +7,7 @@ import {
   SiJavascript,
   SiTypescript,
   SiReact,
+  SiVuedotjs,
   SiNextdotjs,
   SiTailwindcss,
   SiChakraui,
@@ -25,6 +28,7 @@ export const languages: SkillType[] = [
 export const jsAndCssTools: SkillType[] = [
   { name: 'Next.js', icon: SiNextdotjs },
   { name: 'React', icon: SiReact },
+  { name: 'Vue.js', icon: SiVuedotjs },
   { name: 'Tailwind CSS', icon: SiTailwindcss },
   { name: 'Chakra UI', icon: SiChakraui },
   { name: 'Bootstrap', icon: SiBootstrap },
