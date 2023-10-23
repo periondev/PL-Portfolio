@@ -9,10 +9,16 @@ export default function Home() {
   return (
     <div className='container'>
       <h1>{name}</h1>
-      <p className='sub-title font-bold text-center'>{intro}</p>
-      <div className='avatar flex justify-center'>
+      <div className='sub-title text-center'>{intro}</div>
+      <div className='avatar'>
         <div className='w-40 rounded-full relative mx-auto my-10 bg-gray-300'>
-          <Image src='/avatar.png' fill={true} sizes='100' alt='avatar' />
+          <Image
+            src='/avatar.png'
+            fill={true}
+            sizes='100'
+            alt='avatar'
+            priority={true}
+          />
         </div>
       </div>
       <Resume />
