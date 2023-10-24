@@ -15,17 +15,17 @@ export const Post = ({
       return text;
     }
   };
-  const truncatedText = truncateText(description, 140);
+  const truncatedText = truncateText(description, 100);
 
   return (
-    <div className='card card-compact md:card-normal my-2 shadow-lg border-2 border-gray-300 dark:border-zinc-600'>
+    <div className='card card-compact md:card-normal shadow-lg border-2 border-gray-300 dark:border-zinc-600'>
       <div className='card-body'>
         <Link href={postLink} target='_blank' title='See full post'>
           <h2 className='card-title text-start p-0 hover:underline'>
             {postTitle}
           </h2>
         </Link>
-        <p>{truncatedText}</p>
+        <p className='leading-loose'>{truncatedText}</p>
         <div className='flex flex-wrap flex-row gap-1.5'>
           {tags?.map((tech: string, index: number) => {
             return (
