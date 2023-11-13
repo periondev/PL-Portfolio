@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "clsx": "^1.2.1",
-    "daisyui": "^3.5.0",
+    "daisyui": "^4.0.3",
     "next": "^13.4.12",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
