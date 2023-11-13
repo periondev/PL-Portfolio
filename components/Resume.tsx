@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FiLink } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 import { resumeLink } from '@lib/info';
 export const Resume = () => {
   return (
@@ -7,9 +7,9 @@ export const Resume = () => {
       <Link
         href={resumeLink}
         target='_blank'
-        className='btn rounded-lg gap-2 px-10 w-40 shadow-lg border-none text-white bg-teal-700 hover:bg-teal-800'
+        className='btn rounded-lg gap-2 px-5 py-2 w-40 shadow-lg border-none text-base text-white bg-teal-700 hover:bg-teal-800'
       >
-        <FiLink />
+        <FiExternalLink />
         Resume
       </Link>
     </div>
