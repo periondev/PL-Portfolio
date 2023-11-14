@@ -20,7 +20,7 @@ export const items: ProjectType[] = [
     projectName: 'Peri Portfolio',
     previewImage: '/project-images/pl-portfolio.webp',
     description:
-      '你正在瀏覽的我的個人網站，這個網站主要使用的構建工具如下方標籤所示。歡迎點擊下方 GitHub 圖示查看原始碼！',
+      '你正在瀏覽我的個人網站，這個網站主要使用的構建工具如下方標籤所示，感興趣的話歡迎點擊右下方 GitHub 圖示查看原始碼！',
     githubLink: 'https://github.com/periondev/PL-Portfolio',
     tools: [
       'Next.js',
@@ -35,7 +35,7 @@ export const items: ProjectType[] = [
     projectName: 'My Youtube Collection',
     previewImage: '/project-images/My-Youtube-Collection.webp',
     description:
-      '以 Youtube Data API 連接播放清單資料庫作為 YouTube 播放清單的簡約替代，是一個美觀且極簡的播放器與播放清單網頁。使用者可以直觀地在卡片上播放視聽內容。',
+      '以 Youtube Data API 擷取播放清單資料庫作為 YouTube 播放清單的簡約替代，是一個美觀且極簡的播放器與播放清單網頁。使用者可以直觀地在卡片上播放視聽內容。',
     githubLink: 'https://github.com/periondev/youtube-playlist-next-app',
     liveDemoLink: 'https://my-youtube-collection.vercel.app/',
     tools: ['Next.js', 'React', 'Node.js', 'Chakra UI', 'Youtube Data API'],

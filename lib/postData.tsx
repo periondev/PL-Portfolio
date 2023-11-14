@@ -8,7 +8,7 @@ export const posts: PostType[] = [
   承上一篇文章手動部署 GitHub Pages，專案在 GitHub 遠端儲存庫已有main、gh-pages兩個分支，其中 main 作為開發更新的主要分支，gh-pages作為遠端部署 github pages 的來源，那麼我在本地更新程式碼並遞交程式碼，然後執行推送到遠端部署分支的命令:git subtree push --prefix dist origin gh-pages，每次部署都要重複同樣的瑣碎命令和流程，能不能將這個部署流程自動化? 當然可以! 只要撰寫腳本就行了。`,
     postLink: 'https://hackmd.io/@pericode/S16N_jjlT',
     tags: ['GitHub Actions', 'GitHub Pages', 'Deploy'],
-    postDate: 'October 7, 2023',
+    postDate: 'Oct 7, 2023',
   },
   {
     postTitle: 'Vite 部署靜態網頁 Github Pages',
@@ -22,7 +22,7 @@ export const posts: PostType[] = [
   例如我的遠端庫名稱<REPONAME>為vue-weather-app，那麼就設定base 為'/vue-weather-app/':`,
     postLink: 'https://hackmd.io/@pericode/BkcNtoPl6',
     tags: ['Vite', 'GitHub Pages', 'Deploy'],
-    postDate: 'October 3, 2023',
+    postDate: 'Oct 3, 2023',
   },
   {
     postTitle: 'Vue 的響應式基礎',
@@ -31,7 +31,7 @@ export const posts: PostType[] = [
   在 JavaScript 中，我們可以用各種類型的值來儲存資料，例如數字、字串、陣列、物件等。這些值都是可變的，也就是說，我們可以隨時修改它們的內容。例如：`,
     postLink: 'https://hackmd.io/@pericode/H1m-tMCWa',
     tags: ['Vue', 'Reactivity'],
-    postDate: 'August 11, 2023',
+    postDate: 'Aug 11, 2023',
   },
   {
     postTitle: `我是如何在 Next.js 13 with appDir 設定深色模式按鈕 Dark Mode Switch with Tailwind CSS and Daisy UI`,
@@ -43,16 +43,16 @@ export const posts: PostType[] = [
     postDate: 'May 26, 2023',
   },
   {
-    postTitle: '快速了解Next.js中的網頁渲染技術重點: SSR、SSG、ISR與CSR',
+    postTitle: '快速了解 Next.js 中的網頁渲染技術重點: SSR、SSG、ISR 與 CSR',
     description: `前言
     Next.js 是 React 的網頁框架。在學習使用 Next.js 開發的時候，我們會接觸到四種常見的網頁渲染技術。我們需要考量該選擇使用哪些網頁渲染技術，較為適合開發中的網站或應用程式。
     先解釋一下這四種技術的英文縮寫：`,
     postLink: 'https://hackmd.io/@pericode/HyRJHvAsj',
     tags: ['Next.js', 'SEO', '網頁技術'],
-    postDate: 'Apr 07, 2023',
+    postDate: 'Apr 7, 2023',
   },
   {
-    postTitle: `紀錄從 yarn 改為 pnpm Node package manager`,
+    postTitle: `紀錄從 Yarn 改為 pnpm Node Package Manager`,
     description: `前言
      本篇文章簡單紀錄既有開發中的專案原先使用yarn套件管理器，改為使用pnpm做為套件管理器的設定過程。
      Migration
@@ -66,7 +66,7 @@ export const posts: PostType[] = [
     postDate: 'Mar 20, 2023',
   },
   {
-    postTitle: `金魚腦的tailwindcss安裝指南`,
+    postTitle: `金魚腦的 Tailwind CSS 安裝指南`,
     description: `首先看官網安裝介紹
     https://tailwindcss.com/docs/installation
     基本上若有搭配框架使用開發app,例如Next.js

@@ -25,7 +25,7 @@ export const Post = ({
             {postTitle}
           </h2>
         </Link>
-        <p className='leading-loose'>{truncatedText}</p>
+        <p className='leading-relaxed'>{truncatedText}</p>
         <div className='flex flex-wrap flex-row gap-1.5'>
           {tags?.map((tech: string, index: number) => {
             return (

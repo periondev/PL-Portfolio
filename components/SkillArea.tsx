@@ -1,4 +1,4 @@
-import { languages, jsAndCssTools, backendAndGit } from '../lib/skillData';
+import { languages, jsAndCssTools, backendAndOther } from '../lib/skillData';
 import { SkillType } from '@lib/types';
 export const SkillArea = () => {
   return (
@@ -27,14 +27,14 @@ export const SkillArea = () => {
           );
         })}
       </div>
-      <h3>Backend and Version Control</h3>
+      <h3>Backend and Other Dev Tools</h3>
       <div className='skill-container'>
-        {backendAndGit.map((backendAndGit: SkillType, index: number) => {
-          const Icon = backendAndGit.icon;
+        {backendAndOther.map((backendAndOther: SkillType, index: number) => {
+          const Icon = backendAndOther.icon;
           return (
             <div key={index} className='skill-Item'>
               <Icon className='skill-icon' />
-              <p>{backendAndGit.name}</p>
+              <p>{backendAndOther.name}</p>
             </div>
           );
         })}

@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className='flex justify-center px-6 md:px-10'>
+    <div className='flex justify-center px-6 md:px-10 py-2'>
       <p className='text-lg tracking-wide leading-loose'>
         歡迎來到我的個人網站👋我是一名新手前端工程師！從行政領域轉職，我決定追隨我的興趣，進入網頁開發的世界。
         <br />

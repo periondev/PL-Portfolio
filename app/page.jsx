@@ -24,16 +24,16 @@ export default function Home() {
       <Resume />
       <hr className='hr-divider' />
       <div>
-        <h2 className='main-title'>About</h2>
+        <h2>About</h2>
         <About />
       </div>
       <hr className='hr-divider' />
       <div>
-        <h2 className='main-title'>Skills</h2>
+        <h2>Skills</h2>
         <SkillArea />
       </div>
       <hr className='hr-divider' />
-      <h2 className='main-title'>Currently listening to</h2>
+      <h2>Currently listening to</h2>
       <Playlist />
     </div>
   );

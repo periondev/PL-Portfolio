@@ -16,6 +16,7 @@ import {
   SiNodedotjs,
   SiMongodb,
   SiExpress,
+  SiDocker,
 } from 'react-icons/si';
 
 export const languages: SkillType[] = [
@@ -34,9 +35,10 @@ export const jsAndCssTools: SkillType[] = [
   { name: 'Bootstrap', icon: SiBootstrap },
 ];
 
-export const backendAndGit: SkillType[] = [
+export const backendAndOther: SkillType[] = [
   { name: 'Node.js', icon: SiNodedotjs },
   { name: 'Express', icon: SiExpress },
   { name: 'MongoDB', icon: SiMongodb },
   { name: 'Git', icon: SiGit },
+  { name: 'Docker', icon: SiDocker },
 ];
