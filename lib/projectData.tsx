@@ -3,9 +3,9 @@ import { ProjectType } from './types';
 export const items: ProjectType[] = [
   {
     projectName: '天氣預報',
-    previewImage: '/project-images/vue-weather-app.webp',
-    description: `天氣預報網頁，提供台灣各縣市和鄉鎮市區的一週天氣預報，連接至中央氣象署開放資料平台之資料擷取API，使用者可以查詢任意地區的最新天氣狀況，也能儲存自訂地區以便日後快速查看。`,
-    githubLink: 'https://github.com/periondev/vue-weather-app',
+    previewImage: '/project-images/vue-weather.webp',
+    description: `天氣預報網頁，提供台灣各縣市和鄉鎮市區的即時天氣及一週天氣預報，連接至中央氣象署開放資料平台之資料擷取API，使用者可以查詢任意地區的最新天氣狀況，也能儲存自訂地區以便日後快速查看。`,
+    githubLink: 'https://github.com/periondev/vue-weather/',
     tools: [
       'Vue.js',
       'Node.js',
@@ -14,7 +14,7 @@ export const items: ProjectType[] = [
       'Pinia',
       'Opendata API',
     ],
-    liveDemoLink: 'https://periondev.github.io/vue-weather-app/',
+    liveDemoLink: 'https://periondev.github.io/vue-weather/',
   },
   {
     projectName: 'Peri Portfolio',
